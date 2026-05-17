@@ -32,15 +32,15 @@ A lightweight, high-performance browser extension built on the modern Manifest V
 Organização limpa e direta dos arquivos do projeto:
 
 ```text
+
 ├── 📄 manifest.json   # Extension configuration and permission scope
 └── ⚙️ content.js       # Core content script managing URL mutations and DOM injection
-📂 Repository Architecture
-Plaintext
-├── manifest.json      # Extension configuration and permission scope
-└── content.js         # Core content script managing URL mutations and DOM injection
+```
 
 🛠️ Installation Guide
+
 Since this extension is in development, it can be loaded locally into any Chromium-based browser (such as Google Chrome, Brave, Microsoft Edge, or Opera):
+```text
 
 1. Prerequisites
 Download or clone this repository to your local machine.
@@ -56,11 +56,15 @@ Click the Load unpacked (Carregar expandida) button in the top left.
 
 Select the local directory containing your project files.
 
-💡 Result: The extension is now active and will automatically initialize upon visiting any valid YouTube video page.
+ Result: The extension is now active and will automatically initialize upon visiting any valid YouTube video page.
+```
 
 ⚙️ Mechanics & Implementation
+
 Context Verification
 The script evaluates the current global window location string against strict matching parameters before initializing the UI layer:
+
+```text
 
 JavaScript
 const searchStr = "youtube.com/watch?";
@@ -77,5 +81,7 @@ btn.onclick = function() {
     const newURL = getModifiedURL();
     if (newURL) window.location.href = newURL;
 };
+```
 📄 License
+
 This project is intended for personal utility and development workflows. All modifications and code adaptations are free to be distributed under standard open-source conventions.
