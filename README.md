@@ -9,19 +9,35 @@
 YouTube URL Fixer & Redirector
 A lightweight, high-performance browser extension built on the modern Manifest V3 architecture. This extension optimizes user workflows on YouTube by sanitizing malformed URL prefixes and providing a seamless, one-click redirection mechanism to an alternative domain layer (yout-ube.com).
 
-🚀 Key Features
-URL Prefix Sanitization Dynamically monitors the browser address bar. If a YouTube video URL contains unexpected leading prefixes, the script cleanses the string and updates the browser history using state preservation APIs—without triggering a heavy page reload.
+## 🚀 Key Features
 
-Dynamic DOM Injection Inserts a native, highly responsive Action Button (✨ Ir para Yout-ube) directly into the viewport layout strictly when a valid watch context (/watch?) is active.
+*   **🔍 URL Prefix Sanitization**
+    Dynamically monitors the browser address bar. If a YouTube video URL contains unexpected leading prefixes, the script cleanses the string and updates the browser history using state preservation APIs—without triggering a heavy page reload.
+*   **✨ Dynamic DOM Injection**
+    Inserts a native, highly responsive Action Button (`✨ Ir para Yout-ube`) directly into the viewport layout strictly when a valid watch context (`/watch?`) is active.
+*   **🔄 SPA Lifecycle Compatibility**
+    Combines standard `DOMContentLoaded` execution, `MutationObserver` background trees, and a failsafe polling loop to handle YouTube's native Single Page Application (SPA) client-side routing seamlessly.
+*   **🛡️ Zero Permissions Overhead**
+    Operates securely within explicit context limits without requiring invasive browser permission keys, ensuring maximum privacy and minimal resource footprints.
 
-SPA Lifecycle Compatibility Combines standard DOMContentLoaded execution, MutationObserver background trees, and a failsafe polling loop to handle YouTube's native Single Page Application (SPA) client-side routing seamlessly.
+<!-- Badges para dar um visual profissional e dinâmico -->
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue?style=for-the-badge&logo=google-chrome&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge)
 
-Zero Permissions Overhead Operates securely within explicit context limits without requiring invasive browser permission keys, ensuring maximum privacy and minimal resource footprints.
+---## 📂 Repository Architecture
 
+Organização limpa e direta dos arquivos do projeto:
+
+```text
+├── 📄 manifest.json   # Extension configuration and permission scope
+└── ⚙️ content.js       # Core content script managing URL mutations and DOM injection
 📂 Repository Architecture
 Plaintext
 ├── manifest.json      # Extension configuration and permission scope
 └── content.js         # Core content script managing URL mutations and DOM injection
+
 🛠️ Installation Guide
 Since this extension is in development, it can be loaded locally into any Chromium-based browser (such as Google Chrome, Brave, Microsoft Edge, or Opera):
 
