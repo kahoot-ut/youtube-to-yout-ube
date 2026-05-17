@@ -16,7 +16,7 @@
 YouTube URL Fixer & Redirector
 A lightweight, high-performance browser extension built on the modern Manifest V3 architecture. This extension optimizes user workflows on YouTube by sanitizing malformed URL prefixes and providing a seamless, one-click redirection mechanism to an alternative domain layer (yout-ube.com).
 
-## 🚀 Key Features
+## 🔑 Key Features
 
 *   **🔍 URL Prefix Sanitization**
     Dynamically monitors the browser address bar. If a YouTube video URL contains unexpected leading prefixes, the script cleanses the string and updates the browser history using state preservation APIs—without triggering a heavy page reload.
@@ -27,9 +27,7 @@ A lightweight, high-performance browser extension built on the modern Manifest V
 *   **🛡️ Zero Permissions Overhead**
     Operates securely within explicit context limits without requiring invasive browser permission keys, ensuring maximum privacy and minimal resource footprints.
 
----## 📂 Repository Architecture
-
-Organização limpa e direta dos arquivos do projeto:
+📂 Repository Architecture
 
 ```text
 
