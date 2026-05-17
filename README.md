@@ -73,9 +73,10 @@ if (url.includes(searchStr)) {
 }
 DOM Construction & Event Handling
 The button layer is appended natively onto the document body object with an elevated z-index depth (99999) to guarantee visibility across varying YouTube player modes.
+```
 
 Clicking the element intercepts the video identifier string, shifts the core domain name to the target layout, and mutates window.location.href to execute the structural redirect safely:
-
+```
 JavaScript
 btn.onclick = function() {
     const newURL = getModifiedURL();
